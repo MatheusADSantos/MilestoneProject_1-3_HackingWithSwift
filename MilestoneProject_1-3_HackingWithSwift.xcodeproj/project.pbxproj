@@ -3,27 +3,95 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CF3D7662E3F22A33E25E271 /* Pods_MilestoneProject_1_3_HackingWithSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C4088F46B38C18DE5AA303 /* Pods_MilestoneProject_1_3_HackingWithSwift.framework */; };
 		FB5C74EC241279A2008E99F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C74EB241279A2008E99F9 /* AppDelegate.swift */; };
 		FB5C74EE241279A2008E99F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C74ED241279A2008E99F9 /* SceneDelegate.swift */; };
-		FB5C74F0241279A2008E99F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C74EF241279A2008E99F9 /* ViewController.swift */; };
-		FB5C74F3241279A2008E99F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5C74F1241279A2008E99F9 /* Main.storyboard */; };
+		FB5C74F0241279A2008E99F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C74EF241279A2008E99F9 /* HomeViewController.swift */; };
 		FB5C74F5241279A4008E99F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5C74F4241279A4008E99F9 /* Assets.xcassets */; };
 		FB5C74F8241279A4008E99F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5C74F6241279A4008E99F9 /* LaunchScreen.storyboard */; };
+		FB5C75102412894C008E99F9 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C750F2412894C008E99F9 /* Protocols.swift */; };
+		FB5C751224128B49008E99F9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C751124128B49008E99F9 /* Presenter.swift */; };
+		FB5C751424128B78008E99F9 /* WireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C751324128B78008E99F9 /* WireFrame.swift */; };
+		FB5C751824129A96008E99F9 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C751724129A96008E99F9 /* CustomCellTableViewCell.swift */; };
+		FB5C75472412BBB6008E99F9 /* spain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C752F2412BBB6008E99F9 /* spain@2x.png */; };
+		FB5C75482412BBB6008E99F9 /* nigeria@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75302412BBB6008E99F9 /* nigeria@2x.png */; };
+		FB5C75492412BBB6008E99F9 /* nigeria@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75312412BBB6008E99F9 /* nigeria@3x.png */; };
+		FB5C754A2412BBB6008E99F9 /* spain@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75322412BBB6008E99F9 /* spain@3x.png */; };
+		FB5C754B2412BBB6008E99F9 /* italy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75332412BBB6008E99F9 /* italy@3x.png */; };
+		FB5C754C2412BBB6008E99F9 /* ireland@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75342412BBB6008E99F9 /* ireland@2x.png */; };
+		FB5C754D2412BBB6008E99F9 /* germany@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75352412BBB6008E99F9 /* germany@3x.png */; };
+		FB5C754E2412BBB6008E99F9 /* germany@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75362412BBB6008E99F9 /* germany@2x.png */; };
+		FB5C754F2412BBB6008E99F9 /* ireland@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75372412BBB6008E99F9 /* ireland@3x.png */; };
+		FB5C75502412BBB6008E99F9 /* italy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75382412BBB6008E99F9 /* italy@2x.png */; };
+		FB5C75512412BBB6008E99F9 /* poland@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75392412BBB6008E99F9 /* poland@2x.png */; };
+		FB5C75522412BBB6008E99F9 /* russia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C753A2412BBB6008E99F9 /* russia@2x.png */; };
+		FB5C75532412BBB6008E99F9 /* estonia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C753B2412BBB6008E99F9 /* estonia@2x.png */; };
+		FB5C75542412BBB6008E99F9 /* estonia@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C753C2412BBB6008E99F9 /* estonia@3x.png */; };
+		FB5C75552412BBB6008E99F9 /* russia@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C753D2412BBB6008E99F9 /* russia@3x.png */; };
+		FB5C75562412BBB6008E99F9 /* poland@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C753E2412BBB6008E99F9 /* poland@3x.png */; };
+		FB5C75572412BBB6008E99F9 /* uk@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C753F2412BBB6008E99F9 /* uk@3x.png */; };
+		FB5C75582412BBB6008E99F9 /* us@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75402412BBB6008E99F9 /* us@3x.png */; };
+		FB5C75592412BBB6008E99F9 /* france@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75412412BBB6008E99F9 /* france@3x.png */; };
+		FB5C755A2412BBB6008E99F9 /* monaco@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75422412BBB6008E99F9 /* monaco@2x.png */; };
+		FB5C755B2412BBB6008E99F9 /* monaco@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75432412BBB6008E99F9 /* monaco@3x.png */; };
+		FB5C755C2412BBB6008E99F9 /* france@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75442412BBB6008E99F9 /* france@2x.png */; };
+		FB5C755D2412BBB6008E99F9 /* us@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75452412BBB6008E99F9 /* us@2x.png */; };
+		FB5C755E2412BBB6008E99F9 /* uk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5C75462412BBB6008E99F9 /* uk@2x.png */; };
+		FB5C75602412D39B008E99F9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C755F2412D39B008E99F9 /* DetailViewController.swift */; };
+		FB5C75622412D3B3008E99F9 /* ProtocolsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C75612412D3B3008E99F9 /* ProtocolsDetail.swift */; };
+		FB5C75642412D588008E99F9 /* DetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C75632412D588008E99F9 /* DetailWireFrame.swift */; };
+		FB5C75662412D7D1008E99F9 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C75652412D7D1008E99F9 /* DetailInteractor.swift */; };
+		FB5C75682412D819008E99F9 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C75672412D819008E99F9 /* DetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07848B41EAE1FF958F96992B /* Pods-MilestoneProject_1-3_HackingWithSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilestoneProject_1-3_HackingWithSwift.release.xcconfig"; path = "Target Support Files/Pods-MilestoneProject_1-3_HackingWithSwift/Pods-MilestoneProject_1-3_HackingWithSwift.release.xcconfig"; sourceTree = "<group>"; };
+		40C4088F46B38C18DE5AA303 /* Pods_MilestoneProject_1_3_HackingWithSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MilestoneProject_1_3_HackingWithSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38B0E0686A41BC7CAE6179E /* Pods-MilestoneProject_1-3_HackingWithSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilestoneProject_1-3_HackingWithSwift.debug.xcconfig"; path = "Target Support Files/Pods-MilestoneProject_1-3_HackingWithSwift/Pods-MilestoneProject_1-3_HackingWithSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		FB5C74E8241279A2008E99F9 /* MilestoneProject_1-3_HackingWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MilestoneProject_1-3_HackingWithSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5C74EB241279A2008E99F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5C74ED241279A2008E99F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB5C74EF241279A2008E99F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB5C74F2241279A2008E99F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB5C74EF241279A2008E99F9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FB5C74F4241279A4008E99F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5C74F7241279A4008E99F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB5C74F9241279A4008E99F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5C750F2412894C008E99F9 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		FB5C751124128B49008E99F9 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		FB5C751324128B78008E99F9 /* WireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireFrame.swift; sourceTree = "<group>"; };
+		FB5C751724129A96008E99F9 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		FB5C752F2412BBB6008E99F9 /* spain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spain@2x.png"; sourceTree = "<group>"; };
+		FB5C75302412BBB6008E99F9 /* nigeria@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nigeria@2x.png"; sourceTree = "<group>"; };
+		FB5C75312412BBB6008E99F9 /* nigeria@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nigeria@3x.png"; sourceTree = "<group>"; };
+		FB5C75322412BBB6008E99F9 /* spain@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spain@3x.png"; sourceTree = "<group>"; };
+		FB5C75332412BBB6008E99F9 /* italy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "italy@3x.png"; sourceTree = "<group>"; };
+		FB5C75342412BBB6008E99F9 /* ireland@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ireland@2x.png"; sourceTree = "<group>"; };
+		FB5C75352412BBB6008E99F9 /* germany@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "germany@3x.png"; sourceTree = "<group>"; };
+		FB5C75362412BBB6008E99F9 /* germany@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "germany@2x.png"; sourceTree = "<group>"; };
+		FB5C75372412BBB6008E99F9 /* ireland@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ireland@3x.png"; sourceTree = "<group>"; };
+		FB5C75382412BBB6008E99F9 /* italy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "italy@2x.png"; sourceTree = "<group>"; };
+		FB5C75392412BBB6008E99F9 /* poland@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poland@2x.png"; sourceTree = "<group>"; };
+		FB5C753A2412BBB6008E99F9 /* russia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "russia@2x.png"; sourceTree = "<group>"; };
+		FB5C753B2412BBB6008E99F9 /* estonia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estonia@2x.png"; sourceTree = "<group>"; };
+		FB5C753C2412BBB6008E99F9 /* estonia@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estonia@3x.png"; sourceTree = "<group>"; };
+		FB5C753D2412BBB6008E99F9 /* russia@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "russia@3x.png"; sourceTree = "<group>"; };
+		FB5C753E2412BBB6008E99F9 /* poland@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poland@3x.png"; sourceTree = "<group>"; };
+		FB5C753F2412BBB6008E99F9 /* uk@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uk@3x.png"; sourceTree = "<group>"; };
+		FB5C75402412BBB6008E99F9 /* us@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "us@3x.png"; sourceTree = "<group>"; };
+		FB5C75412412BBB6008E99F9 /* france@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "france@3x.png"; sourceTree = "<group>"; };
+		FB5C75422412BBB6008E99F9 /* monaco@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monaco@2x.png"; sourceTree = "<group>"; };
+		FB5C75432412BBB6008E99F9 /* monaco@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monaco@3x.png"; sourceTree = "<group>"; };
+		FB5C75442412BBB6008E99F9 /* france@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "france@2x.png"; sourceTree = "<group>"; };
+		FB5C75452412BBB6008E99F9 /* us@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "us@2x.png"; sourceTree = "<group>"; };
+		FB5C75462412BBB6008E99F9 /* uk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uk@2x.png"; sourceTree = "<group>"; };
+		FB5C755F2412D39B008E99F9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FB5C75612412D3B3008E99F9 /* ProtocolsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsDetail.swift; sourceTree = "<group>"; };
+		FB5C75632412D588008E99F9 /* DetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireFrame.swift; sourceTree = "<group>"; };
+		FB5C75652412D7D1008E99F9 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		FB5C75672412D819008E99F9 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +99,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF3D7662E3F22A33E25E271 /* Pods_MilestoneProject_1_3_HackingWithSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A4DD5CC3314673C62BF6278 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B38B0E0686A41BC7CAE6179E /* Pods-MilestoneProject_1-3_HackingWithSwift.debug.xcconfig */,
+				07848B41EAE1FF958F96992B /* Pods-MilestoneProject_1-3_HackingWithSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		538816473C02C3023F75EE66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40C4088F46B38C18DE5AA303 /* Pods_MilestoneProject_1_3_HackingWithSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB5C74DF241279A2008E99F9 = {
 			isa = PBXGroup;
 			children = (
 				FB5C74EA241279A2008E99F9 /* MilestoneProject_1-3_HackingWithSwift */,
 				FB5C74E9241279A2008E99F9 /* Products */,
+				1A4DD5CC3314673C62BF6278 /* Pods */,
+				538816473C02C3023F75EE66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +144,167 @@
 		FB5C74EA241279A2008E99F9 /* MilestoneProject_1-3_HackingWithSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FB5C752E2412BBB6008E99F9 /* images_flags */,
+				FB5C75052412847B008E99F9 /* Home */,
+				FB5C7506241284A6008E99F9 /* Detail */,
 				FB5C74EB241279A2008E99F9 /* AppDelegate.swift */,
 				FB5C74ED241279A2008E99F9 /* SceneDelegate.swift */,
-				FB5C74EF241279A2008E99F9 /* ViewController.swift */,
-				FB5C74F1241279A2008E99F9 /* Main.storyboard */,
 				FB5C74F4241279A4008E99F9 /* Assets.xcassets */,
 				FB5C74F6241279A4008E99F9 /* LaunchScreen.storyboard */,
 				FB5C74F9241279A4008E99F9 /* Info.plist */,
 			);
 			path = "MilestoneProject_1-3_HackingWithSwift";
+			sourceTree = "<group>";
+		};
+		FB5C74FF24128433008E99F9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C750F2412894C008E99F9 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FB5C750024128441008E99F9 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C751324128B78008E99F9 /* WireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		FB5C75012412844B008E99F9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FB5C750224128450008E99F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C751124128B49008E99F9 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FB5C750324128459008E99F9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FB5C750424128466008E99F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C74EF241279A2008E99F9 /* HomeViewController.swift */,
+				FB5C751724129A96008E99F9 /* CustomCellTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB5C75052412847B008E99F9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C750424128466008E99F9 /* View */,
+				FB5C750324128459008E99F9 /* Interactor */,
+				FB5C750224128450008E99F9 /* Presenter */,
+				FB5C75012412844B008E99F9 /* Entity */,
+				FB5C750024128441008E99F9 /* WireFrame */,
+				FB5C74FF24128433008E99F9 /* Protocols */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FB5C7506241284A6008E99F9 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C750C241284E5008E99F9 /* view */,
+				FB5C750B241284D9008E99F9 /* Interactor */,
+				FB5C750A241284CF008E99F9 /* Presenter */,
+				FB5C7509241284C4008E99F9 /* Entity */,
+				FB5C7508241284BA008E99F9 /* WireFrame */,
+				FB5C7507241284B3008E99F9 /* Protocols */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		FB5C7507241284B3008E99F9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C75612412D3B3008E99F9 /* ProtocolsDetail.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FB5C7508241284BA008E99F9 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C75632412D588008E99F9 /* DetailWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		FB5C7509241284C4008E99F9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FB5C750A241284CF008E99F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C75672412D819008E99F9 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FB5C750B241284D9008E99F9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C75652412D7D1008E99F9 /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FB5C750C241284E5008E99F9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C755F2412D39B008E99F9 /* DetailViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FB5C752E2412BBB6008E99F9 /* images_flags */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C752F2412BBB6008E99F9 /* spain@2x.png */,
+				FB5C75302412BBB6008E99F9 /* nigeria@2x.png */,
+				FB5C75312412BBB6008E99F9 /* nigeria@3x.png */,
+				FB5C75322412BBB6008E99F9 /* spain@3x.png */,
+				FB5C75332412BBB6008E99F9 /* italy@3x.png */,
+				FB5C75342412BBB6008E99F9 /* ireland@2x.png */,
+				FB5C75352412BBB6008E99F9 /* germany@3x.png */,
+				FB5C75362412BBB6008E99F9 /* germany@2x.png */,
+				FB5C75372412BBB6008E99F9 /* ireland@3x.png */,
+				FB5C75382412BBB6008E99F9 /* italy@2x.png */,
+				FB5C75392412BBB6008E99F9 /* poland@2x.png */,
+				FB5C753A2412BBB6008E99F9 /* russia@2x.png */,
+				FB5C753B2412BBB6008E99F9 /* estonia@2x.png */,
+				FB5C753C2412BBB6008E99F9 /* estonia@3x.png */,
+				FB5C753D2412BBB6008E99F9 /* russia@3x.png */,
+				FB5C753E2412BBB6008E99F9 /* poland@3x.png */,
+				FB5C753F2412BBB6008E99F9 /* uk@3x.png */,
+				FB5C75402412BBB6008E99F9 /* us@3x.png */,
+				FB5C75412412BBB6008E99F9 /* france@3x.png */,
+				FB5C75422412BBB6008E99F9 /* monaco@2x.png */,
+				FB5C75432412BBB6008E99F9 /* monaco@3x.png */,
+				FB5C75442412BBB6008E99F9 /* france@2x.png */,
+				FB5C75452412BBB6008E99F9 /* us@2x.png */,
+				FB5C75462412BBB6008E99F9 /* uk@2x.png */,
+			);
+			path = images_flags;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB5C74FC241279A4008E99F9 /* Build configuration list for PBXNativeTarget "MilestoneProject_1-3_HackingWithSwift" */;
 			buildPhases = (
+				BE29B1CF04C490F4204EC14C /* [CP] Check Pods Manifest.lock */,
 				FB5C74E4241279A2008E99F9 /* Sources */,
 				FB5C74E5241279A2008E99F9 /* Frameworks */,
 				FB5C74E6241279A2008E99F9 /* Resources */,
+				6F27E8D2B61CB5C73E56BAAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +367,102 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5C75472412BBB6008E99F9 /* spain@2x.png in Resources */,
+				FB5C75572412BBB6008E99F9 /* uk@3x.png in Resources */,
+				FB5C75522412BBB6008E99F9 /* russia@2x.png in Resources */,
+				FB5C75582412BBB6008E99F9 /* us@3x.png in Resources */,
+				FB5C754D2412BBB6008E99F9 /* germany@3x.png in Resources */,
+				FB5C755E2412BBB6008E99F9 /* uk@2x.png in Resources */,
+				FB5C755A2412BBB6008E99F9 /* monaco@2x.png in Resources */,
+				FB5C75542412BBB6008E99F9 /* estonia@3x.png in Resources */,
+				FB5C754F2412BBB6008E99F9 /* ireland@3x.png in Resources */,
+				FB5C755C2412BBB6008E99F9 /* france@2x.png in Resources */,
+				FB5C75482412BBB6008E99F9 /* nigeria@2x.png in Resources */,
+				FB5C754A2412BBB6008E99F9 /* spain@3x.png in Resources */,
+				FB5C75502412BBB6008E99F9 /* italy@2x.png in Resources */,
+				FB5C75532412BBB6008E99F9 /* estonia@2x.png in Resources */,
 				FB5C74F8241279A4008E99F9 /* LaunchScreen.storyboard in Resources */,
+				FB5C75552412BBB6008E99F9 /* russia@3x.png in Resources */,
+				FB5C75592412BBB6008E99F9 /* france@3x.png in Resources */,
+				FB5C754B2412BBB6008E99F9 /* italy@3x.png in Resources */,
+				FB5C75512412BBB6008E99F9 /* poland@2x.png in Resources */,
+				FB5C75492412BBB6008E99F9 /* nigeria@3x.png in Resources */,
+				FB5C755D2412BBB6008E99F9 /* us@2x.png in Resources */,
+				FB5C754C2412BBB6008E99F9 /* ireland@2x.png in Resources */,
+				FB5C75562412BBB6008E99F9 /* poland@3x.png in Resources */,
+				FB5C755B2412BBB6008E99F9 /* monaco@3x.png in Resources */,
+				FB5C754E2412BBB6008E99F9 /* germany@2x.png in Resources */,
 				FB5C74F5241279A4008E99F9 /* Assets.xcassets in Resources */,
-				FB5C74F3241279A2008E99F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F27E8D2B61CB5C73E56BAAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MilestoneProject_1-3_HackingWithSwift/Pods-MilestoneProject_1-3_HackingWithSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MilestoneProject_1-3_HackingWithSwift/Pods-MilestoneProject_1-3_HackingWithSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MilestoneProject_1-3_HackingWithSwift/Pods-MilestoneProject_1-3_HackingWithSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE29B1CF04C490F4204EC14C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MilestoneProject_1-3_HackingWithSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB5C74E4241279A2008E99F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5C74F0241279A2008E99F9 /* ViewController.swift in Sources */,
+				FB5C751224128B49008E99F9 /* Presenter.swift in Sources */,
+				FB5C75102412894C008E99F9 /* Protocols.swift in Sources */,
+				FB5C74F0241279A2008E99F9 /* HomeViewController.swift in Sources */,
+				FB5C75622412D3B3008E99F9 /* ProtocolsDetail.swift in Sources */,
+				FB5C751824129A96008E99F9 /* CustomCellTableViewCell.swift in Sources */,
+				FB5C75642412D588008E99F9 /* DetailWireFrame.swift in Sources */,
+				FB5C75662412D7D1008E99F9 /* DetailInteractor.swift in Sources */,
 				FB5C74EC241279A2008E99F9 /* AppDelegate.swift in Sources */,
+				FB5C751424128B78008E99F9 /* WireFrame.swift in Sources */,
 				FB5C74EE241279A2008E99F9 /* SceneDelegate.swift in Sources */,
+				FB5C75602412D39B008E99F9 /* DetailViewController.swift in Sources */,
+				FB5C75682412D819008E99F9 /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FB5C74F1241279A2008E99F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB5C74F2241279A2008E99F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB5C74F6241279A4008E99F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +590,7 @@
 		};
 		FB5C74FD241279A4008E99F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38B0E0686A41BC7CAE6179E /* Pods-MilestoneProject_1-3_HackingWithSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +609,7 @@
 		};
 		FB5C74FE241279A4008E99F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07848B41EAE1FF958F96992B /* Pods-MilestoneProject_1-3_HackingWithSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
