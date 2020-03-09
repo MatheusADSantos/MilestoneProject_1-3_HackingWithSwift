@@ -26,7 +26,7 @@ class WireFrame : WireFrameProtocol {
     }
     
     func goToDetailViewController(_ flag:String) {
-//        DetailViewController().flag = flag
+        DetailViewController.flagName = flag
         controller.navigationController?.pushViewController(DetailViewController(), animated: true)
     }
     

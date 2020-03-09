@@ -11,6 +11,7 @@ import UIKit
 
 protocol DetailViewProtocol: class {
     var presenter : DetailPresenterProtocol? { get set }
+    static var flagName: String? { get set }
     
     func render()
 }
